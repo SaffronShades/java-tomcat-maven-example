@@ -5,16 +5,20 @@ pipeline {
 	stages {
 	
 		stage ('Initialize') {
-			steps {
-				//sh '''
-				echo "Initializing Code File"
-				//'''
+			steps {				
+				echo 'Initializing Code File'				
 			}				
 		}
 		
 		stage ('Build') {
 			steps {
-				echo "Initializing Build File"
+				echo 'Initializing Build File'
+			}
+		}
+		
+		stage ('Deploy the artifact') {
+			steps {
+				echo 'Deploying the artifact'
 			}
 		}
 	}
